@@ -72,7 +72,7 @@ let wiek = 33;
 
 Deklaracje nie zwracają wartości, więc nie można przypisać ich wyniku do zmiennej.
 
-```rust
+```rust,compile_fail
 let wynik = (let wiek = 33);
 ```
 

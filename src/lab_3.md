@@ -76,7 +76,7 @@ let dodatek = if punkty < 100 { 2 } else { 5 };
 Należy pamiętać, że przy deklarowaniu zmiennej, wszystkie gałęzie `if` muszą zwracać wartość
 jednakowego typu. W przeciwnym wypadku nastąpi błąd kompilacji.
 
-```rust
+```rust,compile_fail
 let punkty = 50;
 let dodatek = if punkty < 100 { 2 } else { 5.0 };
 ```

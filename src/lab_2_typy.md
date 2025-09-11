@@ -130,7 +130,7 @@ let same_piątki = [5; 3]; // to samo co [5, 5, 5]
 Do poszczególnym elementów tablicy można „dobrać” poprzed wskazanie indeksu w nawiasie kwadratowym.
 Indeksy zaczynają się od 0.
 
-```rust,compile_fail
+```rust
 let fib = [1, 2, 3, 5, 8, 13, 21, 34, 55];
 let osiem = fib[4];
 ```

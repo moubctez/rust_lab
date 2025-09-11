@@ -1,0 +1,5 @@
+[book]
+authors = ["Adam Ciarciński"]
+language = "pl"
+src = "src"
+title = "Język Rust"

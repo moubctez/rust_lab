@@ -1,0 +1,1 @@
+# Wskaźniki, sprytne wskaźniki

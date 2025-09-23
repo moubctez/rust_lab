@@ -25,8 +25,8 @@ Zakres przeważnie zaczyna się i kończy między nawiasami klamrowymi.
 
 ```rust
 {
-    let napis = "Palenie szkodzi"
-    println!("{napis}")
+    let napis = "Palenie szkodzi";
+    println!("{napis}");
 
     // Tutaj `napis` kończy żywot. 💀
 }

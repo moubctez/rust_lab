@@ -9,7 +9,7 @@ Pętla `loop` powtarza blok kodu dopóki nie zostanie przerwana przez `break` lu
 Poniższy kawłek kodu będzie wykonywał się w nieskończoność, to jest dopóki działający program nie
 zostanie przerwany (np. przez wciśnięcie Ctrl-C).
 
-```rust
+```rust,ignore
 loop {
     println!("Jestem w pralce!");
 }

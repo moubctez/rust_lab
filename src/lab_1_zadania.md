@@ -30,8 +30,7 @@ pub fn nwd(mut a: usize, mut b: usize) -> usize {
 }
 ```
 
-8. Poniższy kod obilicza największy wspólny dzielnik bez użycia mnożenia. Spróbuj skompilować go do
-   postaci assemblera i porównać z kodem powyżej. Który zawiera mniej instukcji procesora?
+8. Poniższy kod oblicza największy wspólny dzielnik bez użycia mnożenia. Spróbuj skompilować go do postaci assemblera i porównać z kodem powyżej. Który zawiera mniej instukcji procesora?
 
 ```rust
 pub fn nwd_bez_mnożenia(mut a: usize, mut b: usize) -> usize {

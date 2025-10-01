@@ -70,8 +70,8 @@ Typ `bool` przyjmuje tylko dwie wartości:
 * fałsz `false`
 
 ```rust
-let dalej: bool = true;
-let toksyczny = false;
+let can_continue: bool = true;
+let toxic = false;
 ```
 
 ## Znaki
@@ -80,7 +80,7 @@ Typ `char` reprezentuje pojedynczy znak zgodnie ze standardem [Unicode](https://
 
 ```rust
 let a: char = 'a';
-let uśmiech = '😀';
+let smiling_face = '😀';
 ```
 
 ## Krotki
@@ -88,26 +88,26 @@ let uśmiech = '😀';
 Typ `tuple` grupuje różne typy danych z jeden złożony typ.
 
 ```rust
-let zestaw: (char, i32, &str) = ('🍎', 100, "Jabłko");
+let set: (char, i32, &str) = ('🍎', 100, "Jabłko");
 ```
 
 Można „dobrać” się do poszczególnych elementów krotki:
 
 ```rust
-let zestaw = ('🍎', 100, "Jabłko");
-println!("Przedmiot {}", zestaw.0);
-println!("Punkty {}", zestaw.1);
-println!("Nazwa {}", zestaw.2);
+let set = ('🍎', 100, "Jabłko");
+println!("Przedmiot {}", set.0);
+println!("Punkty {}", set.1);
+println!("Nazwa {}", set.2);
 ```
 
 Można też „zniszczyć” krotkę poprzez wyciągnięcie z niej elementów.
 
 ```rust
-let zestaw = ('🍎', 100, "Jabłko");
-let (przedmiot, punkty, nazwa) = zestaw;
-println!("Przedmiot {przedmiot}");
-println!("Punkty {punkty}");
-println!("Nazwa {nazwa}");
+let set = ('🍎', 100, "Jabłko");
+let (object, value, name) = set;
+println!("Przedmiot {object}");
+println!("Wartość {value}");
+println!("Nazwa {name}");
 ```
 
 ## Tablica
@@ -117,14 +117,14 @@ zawartej w niej elementów. (Do tego służą inne type, np. `Vec`).
 
 ```rust
 let fib: [u16; 9] = [1, 2, 3, 5, 8, 13, 21, 34, 55];
-let dni_tygodnia = ["poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota",
-                    "niedziela"];
+let weekdays = ["poniedziałek", "wtorek", "środa", "czwartek", "piątek", "sobota",
+                "niedziela"];
 ```
 
 Można zdefiniować tablicę zawierającą określoną liczbę takich samych elementów:
 
 ```rust
-let same_piątki = [5; 3]; // to samo co [5, 5, 5]
+let all_fives = [5; 3]; // to samo co [5, 5, 5]
 ```
 
 Do poszczególnym elementów tablicy można „dobrać” poprzed wskazanie indeksu w nawiasie kwadratowym.
@@ -132,18 +132,18 @@ Indeksy zaczynają się od 0.
 
 ```rust
 let fib = [1, 2, 3, 5, 8, 13, 21, 34, 55];
-let osiem = fib[4];
+let eight = fib[4];
 ```
 
 Próba pobrania elementu z indeksem spoza zakresu kończy się błędem.
 
 ```rust,compile_fail
 let fib = [1, 2, 3, 5, 8, 13, 21, 34, 55];
-let nie_ma_takiego_elementu = fib[9];
+let non_existing = fib[9];
 ```
 
 ## Ciąg znaków
 
 ```rust
-let tekst = "Zażółć gęślą jaźń.";
+let text = "Zażółć gęślą jaźń.";
 ```

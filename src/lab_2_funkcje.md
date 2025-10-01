@@ -10,17 +10,17 @@ Główną funkcją, od której startuje program, jest funkcja `main()`.
 fn main() {
     println!("Witaj, świecie!");
 
-    przykładowa_funkcja();
+    example_function();
 }
 
-fn przykładowa_funkcja() {
+fn example_function() {
     println!("Pozdrowienia z przykładowej funkcji.");
 }
 ```
 
-W powyższym przykładzie, funkcja `main()` wywołuje inną funkcję `przykładowa_funkcja()`.
+W powyższym przykładzie, funkcja `main()` wywołuje inną funkcję `example_function()`.
 
-> `println!` to makro, czyli coś co zostanie rozwinięte podaczas kompilowania programu. Makro
+> `println!` to makro, czyli coś co zostanie rozwinięte podczas kompilowania programu. Makro
 > poznajemy po wykrzykniku `!` na końcu nazwy.
 
 ## Argumenty
@@ -29,25 +29,25 @@ Funkcje mogą przyjmować argumenty (zwane również parametrami funkcji). Argum
 zmiennmi tworzącymi _sygnaturę_ funkcji. Argumenty muszą mieć wskazany typ danych.
 
 ```rust
-fn powitanie(imię: &str) {
+fn welcome_message(imię: &str) {
     println!("Witaj, {imię}");
 }
 
 fn main() {
-    powitanie("księżniczko");
-    powitanie("książę");
+    welcome_message("księżniczko");
+    welcome_message("książę");
 }
 ```
 
 Wywołanie funcji z nieodpowiednim typem danych jako argument kończy się błędem kompilowania.
 
 ```rust,compile_fail
-fn powitanie(imię: &str) {
+fn welcome_message(imię: &str) {
     println!("Witaj, {imię}");
 }
 
 fn main() {
-    powitanie(0xc3);
+    welcome_message(0xc3);
 }
 ```
 
@@ -55,7 +55,7 @@ fn main() {
 error[E0308]: mismatched types
  --> src/main.rs:6:15
   |
-6 |     powitanie(0xc3);
+6 |     welcome_message(0xc3);
   |     --------- ^^^^ expected `&str`, found integer
   |     |
   |     arguments to this function are incorrect
@@ -67,20 +67,20 @@ Deklaracje to instrukcje, które wykonują pewne czynności i nie zwracają wart
 się średnikiem.
 
 ```rust
-let wiek = 33;
+let age = 33;
 ```
 
 Deklaracje nie zwracają wartości, więc nie można przypisać ich wyniku do zmiennej.
 
 ```rust,compile_fail
-let wynik = (let wiek = 33);
+let result = (let age = 33);
 ```
 
 ```text
 error: expected expression, found `let` statement
  --> src/main.rs:2:18
   |
-2 |     let wynik = (let wiek = 33);
+2 |     let result = (let age = 33);
   |                  ^^^
   |
   = note: only supported directly in conditions of `if` and `while` expressions
@@ -99,17 +99,17 @@ let c = {
 
 ## Funkcje zwracające wartość
 
-Funkcje mogą zwracać wartość. Zwracane wartości nie powiadają nazwy, ale muszę mieć okreśony typ
+Funkcje mogą zwracać wartość. Zwracane wartości nie powiadają nazwy, ale muszą mieć okreśony typ
 danych. Zwracane wartości definiowane są przez użycie strzałki `->` (dwa znaki). Zwracana wartość
 jest ostatnim wyrażeniem w definicji funkcji (bez średnika).
 
 ```rust
-fn suma(a: i32, b: i32) -> i32 {
+fn sum(a: i32, b: i32) -> i32 {
     a + b
 }
 
 fn main() {
-    let c = suma(16, 128);
+    let c = sum(16, 128);
     println!("Suma: {c}");
 }
 ```
@@ -119,7 +119,7 @@ wartości wcześniej, jeśli z jakiegoś powodu zachodzi taka potrzeba. Prefereo
 przedstawiona powyżej (bez `return`).
 
 ```rust
-fn suma(a: i32, b: i32) -> i32 {
+fn sum(a: i32, b: i32) -> i32 {
     return a + b;
 }
 ```

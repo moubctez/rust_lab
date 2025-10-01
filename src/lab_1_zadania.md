@@ -5,7 +5,7 @@
 2. Komenda `cargo init` tworzy nowy projekt w istniejącym katalogu. Sprawdź jaka jest różnica między
    `cargo init` a `cargo new`?
 
-3. Cargo obsługuje systemu obsługi wersji. Domyślnie nowy projekt jest tworzony ze wsparciem dla
+3. Cargo obsługuje systemy obsługi wersji. Domyślnie nowy projekt jest tworzony ze wsparciem dla
    [Git](https://git-scm.com). Jak wyłączyć obsługę wersjonowania przy tworzeniu nowego projektu?
    Jak utworzyć projekt ze wsparciem dla [Mercurial](https://www.mercurial-scm.org)?
 
@@ -22,7 +22,7 @@
    użytych przy włączonej optymalizacji (opcja `-O` lub `-C opt-level`).
 
 ```rust
-pub fn nwd(mut a: usize, mut b: usize) -> usize {
+pub fn gcd(mut a: usize, mut b: usize) -> usize {
     while b != 0 {
         (b, a) = (a % b, b);
     }
@@ -34,7 +34,7 @@ pub fn nwd(mut a: usize, mut b: usize) -> usize {
    postaci assemblera i porównać z kodem powyżej. Który zawiera mniej instukcji procesora?
 
 ```rust
-pub fn nwd_bez_mnożenia(mut a: usize, mut b: usize) -> usize {
+pub fn gcd_sub(mut a: usize, mut b: usize) -> usize {
     while a != b {
         if a > b { a -= b } else { b -= a }
     }
@@ -48,8 +48,8 @@ pub fn nwd_bez_mnożenia(mut a: usize, mut b: usize) -> usize {
 use base64::prelude::*;
 
 fn main() {
-    let zakodowane = BASE64_STANDARD.encode(b"sekret");
-    println!("{zakodowane}");
+    let encoded = BASE64_STANDARD.encode(b"sekret");
+    println!("{encoded}");
 }
 ```
 

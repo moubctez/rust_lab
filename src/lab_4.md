@@ -5,7 +5,7 @@
 Stos i sterta są dwoma sposobami zarządzania pamięcią dostępną dla działającego programu.
 
 Stos ma z góry określoną wielkość, a wartości na nim odkładane są w odwrotnej kolejności niż
-zdejmowane (ostatnia odłożona wartość będzie pierwszyą do zdjęcia).
+zdejmowane (ostatnia odłożona wartość będzie pierwszą do zdjęcia).
 
 Sterta wymaga żądania od systemu operacyjnego przydzielenia obszaru pamięci o żądanej wielkości.
 Kiedy taki kawałek pamięci przestaje być potrzebny, należy go zwolnić. Adres takiego kawałka pamięci
@@ -25,10 +25,10 @@ Zakres przeważnie zaczyna się i kończy między nawiasami klamrowymi.
 
 ```rust
 {
-    let napis = "Palenie szkodzi";
-    println!("{napis}");
+    let banner = "Palenie szkodzi";
+    println!("{banner}");
 
-    // Tutaj `napis` kończy żywot. 💀
+    // Tutaj `banner` kończy żywot. 💀
 }
 ```
 
@@ -40,6 +40,6 @@ Jest też ściśle związany z podstawowym typem danych `str`.
 Nowy pusty `String` może zostać utworzony za pomocą metody `new'.
 
 ```rust
-let mut tekst = String::new();
-tekst.push_str("Witaj, świecie!");
+let mut text = String::new();
+text.push_str("Witaj, świecie!");
 ```

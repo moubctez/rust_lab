@@ -30,7 +30,7 @@ fn main() {
 
 ## Definiowanie zmiennych
 
-Rust jest językiem statycznie typowanym, co oznacz, że podczas kompilacji musi znać rodzaj danych
+Rust jest językiem statycznie typowanym, co oznacza, że podczas kompilacji musi znać rodzaj danych
 przypisanych do zmiennych.
 
 Zmienne definiowane są przez słowo kluczowe `let`, po którym podajemy nazwę zmieniej.
@@ -101,8 +101,8 @@ thx = 666;
 Stałe to wartości, które nigdy nie ulegają zmianie.
 
 ```rust
-const PRĘDKOŚĆ_ŚWIATŁA: u32 = 299_792_458;
-const DZIEŃ_W_SEKUNDACH: u32 = 24 * 60 * 60;
+const LIGHTSPEED: u32 = 299_792_458;
+const DAY_IN_SEC: u32 = 24 * 60 * 60;
 const PORT_HTTP: u16 = 80;
 ```
 
@@ -128,10 +128,10 @@ println!("{x}"); // 21
 Przysłanienie pozwala na utworzenie nowej zmiennej o tej samej nazwie ale innym typie.
 
 ```rust
-let rozmiar = 69;
-let rozmiar = 13u32;
-let rozmiar = rozmiar * 2;
-let rozmiar = "duży";
+let size = 69;
+let size = 13u32;
+let size = size * 2;
+let size = "duży";
 ```
 
 > Zmienne są częścią ramki stosu.

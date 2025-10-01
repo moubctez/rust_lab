@@ -6,8 +6,8 @@ Wyrażenie `if` pozwala na wykonanie wskazanego bloku kodu w przypadku kiedy pod
 spełniony (jego wartość jest `true`).
 
 ```rust
-let punkty = 50;
-if punkty < 100 {
+let score = 50;
+if score < 100 {
     println!("Warunek spełniony");
 }
 ```
@@ -17,8 +17,8 @@ wartość jest `false`). Taki blok podajemy bezpośrednio po `if` używając sł
 oznacza _w przeciwnym wypadku_).
 
 ```rust
-let punkty = 50;
-if punkty < 100 {
+let score = 50;
+if score < 100 {
     println!("Warunek spełniony");
 } else {
     println!("Warunek niespełniony");
@@ -54,12 +54,12 @@ if liczba != 0 {
 Wyrażenia `if` i `else` można łączyć w ciągi rozdzielone `else if`.
 
 ```rust
-let punkty = 50;
-if punkty < 10 {
+let score = 50;
+if score < 10 {
     println!("Mało");
-} else if punkty < 50 {
+} else if score < 50 {
     println!("Więcej");
-} else if punkty < 100 {
+} else if score < 100 {
     println!("Dużo");
 } else {
     println!("Za dużo");
@@ -69,16 +69,16 @@ if punkty < 10 {
 Ponieważ `if` jest wyrażeniem, można go użyć do przypisania wartości w deklaracji `let`.
 
 ```rust
-let punkty = 50;
-let dodatek = if punkty < 100 { 2 } else { 5 };
+let score = 50;
+let bonus = if score < 100 { 2 } else { 5 };
 ```
 
 Należy pamiętać, że przy deklarowaniu zmiennej, wszystkie gałęzie `if` muszą zwracać wartość
 jednakowego typu. W przeciwnym wypadku nastąpi błąd kompilacji.
 
 ```rust,compile_fail
-let punkty = 50;
-let dodatek = if punkty < 100 { 2 } else { 5.0 };
+let score = 50;
+let bonus = if score < 100 { 2 } else { 5.0 };
 ```
 
 Kompilacja powyższego kończy się błędem:
@@ -87,7 +87,7 @@ Kompilacja powyższego kończy się błędem:
 error[E0308]: `if` and `else` have incompatible types
  --> src/main.rs:3:48
   |
-3 |     let dodatek = if punkty < 100 { 2 } else { 5.0 };
+3 |     let bonus = if score < 100 { 2 } else { 5.0 };
   |                                     -          ^^^ expected integer, found floating-point number
   |                                     |
   |                                     expected because of this
@@ -96,8 +96,8 @@ error[E0308]: `if` and `else` have incompatible types
 Przykład: liczby dni w roku.
 
 ```rust
-let rok = 2025;
-let dni_w_roku = if (rok % 4 == 0 && rok % 100 != 0) || rok % 400 == 0 {
+let year = 2025;
+let days_in_year = if (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 {
     366
 } else {
     365

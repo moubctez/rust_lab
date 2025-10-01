@@ -6,6 +6,7 @@
   - [Zadania do samodzielnego wykonania](./lab_1_zadania.md)
 - [Podstawowe typy i zmienne, podstawy](./lab_2.md)
   - [Podstawowe typy danych](./lab_2_typy.md)
+  - [Operatory](./lab_2_operatory.md)
   - [Funkcje](./lab_2_funkcje.md)
   - [Zadania do samodzielnego wykonania](./lab_2_zadania.md)
 - [Sterowanie przepływem](./lab_3.md)

@@ -16,34 +16,34 @@ loop {
 ```
 
 Poniżej znajduje się przykładowy program zliczający ustawione bity w licznie 32-bitowej. Pętla
-`loop` zostanie przerwana kiedy liczba będzie równa zero.
+`loop` zostanie przerwana kiedy liczba ze zmiennej `number` będzie równa zero.
 
 ```rust
-let mut liczba = 0xdead_f00du32;
-let mut jedynki = 0;
+let mut number = 0xdead_f00du32;
+let mut ones = 0;
 loop {
-    if liczba == 0 {
+    if number == 0 {
         break;
     }
-    if liczba & 1 == 1 {
-        jedynki += 1;
+    if number & 1 == 1 {
+        ones += 1;
     }
-    liczba >>= 1;
+    number >>= 1;
 }
-println!("{jedynki}");
+println!("{ones}");
 ```
 
 Pętla jest również wyrażaniem, więc może zwracać wartość.
 
 ```rust
-let mut liczba = 0xdead_f00du32;
-let mut jedynki = 0;
+let mut number = 0xdead_f00du32;
+let mut ones = 0;
 let wynik = loop {
-    if liczba == 0 {
-        break jedynki;
+    if number == 0 {
+        break ones;
     }
-    jedynki += liczba & 1;
-    liczba >>= 1;
+    ones += number & 1;
+    number >>= 1;
 };
 println!("{wynik}");
 ```
@@ -60,17 +60,17 @@ Pętle mogą mieć etykiety, które są pomocne w określaniu, którą pętlę m
 
 ## Pętla `while`
 
-Pętla `while` powtarza blok kodu tak długi jak spełniony jest podany warunek. Warunek jest obliczany
+Pętla `while` powtarza blok kodu tak długo jak spełniony jest podany warunek. Warunek jest obliczany
 przy każdym powtórzeniu pętli.
 
 ```rust
-let mut liczba = 0xdead_f000u32;
-let mut jedynki = 0;
-while liczba != 0 {
-    jedynki += liczba & 1;
-    liczba >>= 1;
+let mut number = 0xdead_f000u32;
+let mut ones = 0;
+while number != 0 {
+    ones += number & 1;
+    number >>= 1;
 }
-println!("{jedynki}");
+println!("{ones}");
 ```
 
 ## Pętla `for`

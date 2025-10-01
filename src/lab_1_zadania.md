@@ -30,8 +30,7 @@ pub fn gcd(mut a: usize, mut b: usize) -> usize {
 }
 ```
 
-8. Poniższy kod obilicza największy wspólny dzielnik bez użycia mnożenia. Spróbuj skompilować go do
-   postaci assemblera i porównać z kodem powyżej. Który zawiera mniej instukcji procesora?
+8. Poniższy kod oblicza największy wspólny dzielnik bez użycia mnożenia. Spróbuj skompilować go do postaci assemblera i porównać z kodem powyżej. Który zawiera mniej instukcji procesora?
 
 ```rust
 pub fn gcd_sub(mut a: usize, mut b: usize) -> usize {

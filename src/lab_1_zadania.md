@@ -18,7 +18,7 @@
 6. Spróbuj zbudować projekt z opcją `--release`. Czy zmieniła się wielkość pliku wynikowego?
 
 7. Poniższy kod oblicza największy wspólny dzielnik. Spróbuj skompilować do postaci assemblera
-   używając `rust --emit --crate-type lib plik.rs`. O ile mniej instrukcji procesora zostanie
+   używając `rustc --emit asm --crate-type lib plik.rs`. O ile mniej instrukcji procesora zostanie
    użytych przy włączonej optymalizacji (opcja `-O` lub `-C opt-level`).
 
 ```rust

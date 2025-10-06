@@ -2,7 +2,7 @@
 
 1. Napisz funkcję zamieniającą (w obie strony):
 
-   - temperaturę ze skali Celjsusza na Fahrenheita
+   - temperaturę ze skali Celcjusza na Fahrenheita
    - odłegłość z metrów na stopy
    - prędkość z km/godz. na węzły morskie
 

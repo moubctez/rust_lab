@@ -113,7 +113,7 @@ println!("Nazwa {name}");
 ## Tablica
 
 Tablica jest zbiorem elementów tego samego typu. Raz zdefiniowana tablica nie może zmieniać liczby
-zawartej w niej elementów. (Do tego służą inne type, np. `Vec`).
+zawartej w niej elementów. (Do tego służą inne typy np. `Vec`).
 
 ```rust
 let fib: [u16; 9] = [1, 2, 3, 5, 8, 13, 21, 34, 55];

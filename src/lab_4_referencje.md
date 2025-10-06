@@ -1,8 +1,6 @@
 # Referencje i pożyczanie
 
-Nie ma konieczności oddawania zmiennych na zawsze. Można je pożyczyć. Pożyczone zmienne muszę zostać
-zwrócone. Analogicznie jak w życiu. W świecie języka Rust, pożyczanie polega na utworzeniu
-_referencji_ do zmiennej. Referencje uznaczamy znakiem `&`.
+Nie ma konieczności oddawania zmiennych na zawsze. Można je pożyczyć. Pożyczone zmienne muszą zostać zwrócone. Analogicznie jak w życiu. W świecie języka Rust, pożyczanie polega na utworzeniu _referencji_ do zmiennej. Referencje uznaczamy znakiem `&`.
 
 ```rust
 fn print(s: &String) {
@@ -16,9 +14,7 @@ fn main() {
 }
 ```
 
-W powyższym przykładzie, składnia `&text` oznacza referencję do wartości `text`. Refernencja **nie**
-staje się właścicielem, a wartość, do której się odnosi nie przestanie istnieć kiedy zniknie
-referencja. Tworzenie referencji nazywamy _pożyczaniem_.
+W powyższym przykładzie, składnia `&text` oznacza referencję do wartości `text`. Referencja **nie** staje się właścicielem, a wartość, do której się odnosi nie przestanie istnieć kiedy zniknie referencja. Tworzenie referencji nazywamy _pożyczaniem_.
 
 Pożyczone wartości domyślnie nie są mutowalne, czyli nie można ich zmieniać.
 
@@ -62,12 +58,9 @@ fn main() {
 }
 ```
 
-Została utworzona mutowalna referencja `&mut text`. Teraz widać wyraźnie, że funkcja zmieni
-zawartość tej zmiennej. Tak samo definicja funkcji jawnie wskazuje, że zawartość zmiennej podanej
-jako argument, ulegnie zmianie.
+Została utworzona mutowalna referencja `&mut text`. Teraz widać wyraźnie, że funkcja zmieni zawartość tej zmiennej. Tak samo definicja funkcji jawnie wskazuje, że zawartość zmiennej podanej jako argument, ulegnie zmianie.
 
-Mutowalne referencje mają ograniczenie: w danej chwili można mieć tylko **jedną** mutowalną
-referencję do zmiennej (i żadnej innej, nawet niemutowalnej).
+Mutowalne referencje mają ograniczenie: w danej chwili można mieć tylko **jedną** mutowalną referencję do zmiennej (i żadnej innej, nawet niemutowalnej).
 
 ```rust,compile_fail
 let mut text = String::from("hello");
@@ -106,8 +99,7 @@ println!("{ref1}, {ref2}");
 
 ## Dyndające referencje
 
-Kompilator języka Rust gwarantuje, że nie będą występować _dyndające_ referencje, to znaczy takie,
-które odnoszą się do nieistniejących danych.
+Kompilator języka Rust gwarantuje, że nie będą występować _dyndające_ referencje, to znaczy takie, które odnoszą się do nieistniejących danych.
 
 ```rust,compile_fail
 fn dangle() -> &String {
@@ -120,9 +112,7 @@ fn main() {
 }
 ```
 
-Kompilator zwróci błąd. Na razie można pominąć komunikat o czasie życia (_lifetime_), bo o tym
-będzie później. Na razie istotne jest to, że funkcja zwraca pożyczoną wartość, ale nie ma skąd
-pożyczyć.
+Kompilator zwróci błąd. Na razie można pominąć komunikat o czasie życia (_lifetime_), bo o tym będzie później. Na razie istotne jest to, że funkcja zwraca pożyczoną wartość, ale nie ma skąd pożyczyć.
 
 ```text
 error[E0106]: missing lifetime specifier

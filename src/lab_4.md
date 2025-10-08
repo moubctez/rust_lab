@@ -11,7 +11,7 @@ Sterta wymaga żądania od systemu operacyjnego przydzielenia obszaru pamięci o
 Kiedy taki kawałek pamięci przestaje być potrzebny, należy go zwolnić. Adres takiego kawałka pamięci
 przeważnie odkładany jest na stosie.
 
-Odkładanie na stosie jest szybsze od zapisywania na stercie ponieważ odpada krok żądania (alokacji)
+Odkładanie na stosie jest szybsze od zapisywania na stercie, ponieważ odpada krok żądania (alokacji)
 pamięci.
 
 ## Reguły własności
@@ -37,7 +37,7 @@ Zakres przeważnie zaczyna się i kończy między nawiasami klamrowymi.
 `String` jest typem danych przechowującym ciąg znaków. Znaki przechowywane są w buforze na stercie.
 Jest też ściśle związany z podstawowym typem danych `str`.
 
-Nowy pusty `String` może zostać utworzony za pomocą metody `new'.
+Nowy pusty `String` może zostać utworzony za pomocą metody `new`.
 
 ```rust
 let mut text = String::new();
@@ -99,14 +99,14 @@ kiedy nie jest już potrzebny. Jeżeli nastąpiłoby kopiowanie, nie byłoby wia
 miałaby być odpowiedzialna za zwolenienie pamięci bufora.
 
 W szczególności, jeżeli typ danych implementuje cechę (_trait_) `Copy`, to dane są **kopiowane**.
-Ale o tym będzie mowa później
+Ale o tym będzie mowa później.
 
 ## Klonowanie
 
-W przypadku kiedy zachodzi potrzeba skopiowania zawartości zmiennej, na pomoc przychodzi
-**klonowanie**. W przypadku `String` klonowanie polega na zarezerwowaniu pamięci na nowy bufor i
-skopiowanie zawartości jedneo bufora do drugiego. Do klonowania służy metoda `clone` (z cechy
-`Clone`). Poniższy kod zadziała:
+Kiedy zachodzi potrzeba skopiowania zawartości zmiennej, na pomoc przychodzi **klonowanie**.
+W przypadku `String` klonowanie polega na zarezerwowaniu pamięci na nowy bufor i skopiowanie
+zawartości jedneo bufora do drugiego. Do klonowania służy metoda `clone` (z cechy `Clone`).
+Poniższy kod zadziała:
 
 ```rust
 let text1 = String::from("studia");

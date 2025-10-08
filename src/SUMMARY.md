@@ -14,6 +14,7 @@
   - [Zadania do samodzielnego wykonania](./lab_3_zadania.md)
 - [Referencje, własność obiektów i pożyczanie](./lab_4.md)
   - [Referencje i pożyczanie](./lab_4_referencje.md)
+  - [Kromki](./lab_4_kromki.md)
   - [Zadania do samodzielnego wykonania](./lab_4_zadania.md)
 - [Dopasowywanie wzorców](./lab_5.md)
 - [Korzystanie z przydatnych pakietów](./lab_6.md)

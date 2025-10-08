@@ -1,8 +1,9 @@
 # Referencje i pożyczanie
 
-Nie ma konieczności oddawania zmiennych na zawsze. Można je pożyczyć. Pożyczone zmienne muszę zostać
-zwrócone. Analogicznie jak w życiu. W świecie języka Rust, pożyczanie polega na utworzeniu
-_referencji_ do zmiennej. Referencje uznaczamy znakiem `&`.
+W tym miejscu, mój drogi czytelniku, pozytywnie Cię zaskoczę. Otóż nie ma konieczności oddawania
+zmiennych na zawsze. Można je pożyczyć. Pożyczone zmienne muszą zostać zwrócone. Analogicznie jak w
+życiu. W świecie języka Rust, pożyczanie polega na utworzeniu _referencji_ do zmiennej. Referencje
+oznaczamy znakiem `&`.
 
 ```rust
 fn print(s: &String) {
@@ -78,7 +79,7 @@ let ref2 = &mut text;
 println!("{ref1}, {ref2}");
 ```
 
-Kompilator od razy zakrzyczy błędem:
+Kompilator od razu zakrzyczy błędem:
 
 ```text
 error[E0499]: cannot borrow `text` as mutable more than once at a time
@@ -121,8 +122,7 @@ fn main() {
 ```
 
 Kompilator zwróci błąd. Na razie można pominąć komunikat o czasie życia (_lifetime_), bo o tym
-będzie później. Na razie istotne jest to, że funkcja zwraca pożyczoną wartość, ale nie ma skąd
-pożyczyć.
+będzie później. Istotne jest to, że funkcja zwraca pożyczoną wartość, ale nie ma skąd pożyczyć.
 
 ```text
 error[E0106]: missing lifetime specifier

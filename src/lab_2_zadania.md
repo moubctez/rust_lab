@@ -18,3 +18,14 @@ let pesel = b"44051401458";
    - wyświetlającą datę urodzenia (musi być prawidłowa dla lat 1800 – 2299)
    - wyświetlającą płeć
    - sprawdzającą sumę kontrolną
+
+4. Napisz funkcję do przekształcania liczby zapisanej przy pomocy cyfr i przedrostka na zapis przy
+   pomocy samych cyfr, np. 12.34 M = 12 340 000.
+
+   | symbol | przedrostek |  wartość              |
+   |--------|-------------|----------------------:|
+   |      K | kilo        |                 1 000 |
+   |      M | mega        |             1 000 000 |
+   |      G | giga        |         1 000 000 000 |
+   |      T | tera        |     1 000 000 000 000 |
+   |      P | peta        | 1 000 000 000 000 000 |

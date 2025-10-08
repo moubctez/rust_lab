@@ -17,7 +17,7 @@ fn main() {
 }
 ```
 
-W powyższym przykładzie, składnia `&text` oznacza referencję do wartości `text`. Refernencja **nie**
+W powyższym przykładzie, składnia `&text` oznacza referencję do wartości `text`. Referencja **nie**
 staje się właścicielem, a wartość, do której się odnosi nie przestanie istnieć kiedy zniknie
 referencja. Tworzenie referencji nazywamy _pożyczaniem_.
 

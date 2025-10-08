@@ -86,12 +86,10 @@ for element in a {
 }
 ```
 
-> Pętlę `for` nazwyamy _iterującą_. Wyrażenie do iterowania musi implementować
+> Pętlę `for` nazywamy _iterującą_. Wyrażenie do iterowania musi implementować
 > `std::iter::IntoInterator`.
 
-Innym elementem gerenrującym jest `Range` (ang. _zakres_) ze standardowej biblioteki Rust, który
-generuje liczby z zakresu `początek..koniec`. Zakres będzie zawierał liczby `początek <= n <
-koniec`. Poniższy kod wypisze liczby od 1 do 7.
+Innym elementem generującym jest `Range` (ang. _zakres_) ze standardowej biblioteki Rust, który generuje liczby z zakresu `początek..koniec`. Zakres będzie zawierał liczby `początek <= n < koniec`. Poniższy kod wypisze liczby od 1 do 7.
 
 ```rust
 for i in 1..8 {

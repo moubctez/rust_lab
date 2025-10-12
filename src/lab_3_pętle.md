@@ -96,3 +96,24 @@ for i in 1..8 {
     println!("{i}");
 }
 ```
+
+Do pobrania liczby z klawiatury można sie posłużyć następującym kodem:
+```rust,noplayground
+use std::io;
+
+fn main() {
+    let mut input = String::new();
+    println!("Podaj liczbę:");
+
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Nie wczytało danych");
+
+    let number: i32 = input
+        .trim()
+        .parse()
+        .expect("Nie liczba!");
+	
+	println!("Podano: {}", number);
+}
+```

@@ -2,7 +2,7 @@
 
 ## Komentarze
 
-Komentarze w kodzie zaczynają się do dwóch ukośników `//` i kończą się do prawej strony linijki.
+Komentarze w kodzie zaczynają się od dwóch ukośników `//` i kończą się do prawej strony linijki.
 
 ```rust
 // Główna funkcja programu.
@@ -42,7 +42,7 @@ println!("Prędkość światła w próżni {c} m/s.");
 ```
 
 W powyższym przykładzie definicja powoduje, że nazwa `c` będzie miała przypisaną wartość
-299792458 o typie `i32`. Definiująć zmienne typ danych można pominąć – kompilator powinien domyślić
+299792458 o typie `i32`. Definiując zmienne, typ danych można pominąć – kompilator powinien domyślić
 się jakiego typu jest to zmienna. W przypadku liczb całkowitych, domyślnie jest to `i32`. Tak więc
 poniższy kod jest równoważny poprzedniemu.
 
@@ -119,7 +119,7 @@ let x = x * 2 + 1;
 {
     let x = 100;
     println!("{x}"); // 100
-    // Tutaj kończy się zakres zakres.
+    // Tutaj kończy się zakres.
 }
 // Zmienna `x` została odsłonięta do poprzedniej wartości.
 println!("{x}"); // 21

@@ -92,9 +92,9 @@ error[E0382]: borrow of moved value: `text1`
   |                ^^^^^ value borrowed here after move
 ```
 
-Dlaczego tak się dzieje? W pierwszym przykładzie, liczba całkowita jest na tyle mało złożona, że
-można są skopiować z jednej zmiennej do drugiej. W drugim przykładzie rezerwowana jest pamięć na
-bufor znaków i kopiowanie nie jest takie proste, ponieważ trzeba pamiętać aby taki bufor zwolnić
+Dlaczego tak się dzieje? W pierwszym przykładzie liczba całkowita jest na tyle mało złożona, że
+można ją skopiować z jednej zmiennej do drugiej. W drugim przykładzie rezerwowana jest pamięć na
+bufor znaków i kopiowanie nie jest takie proste, ponieważ trzeba pamiętać, aby taki bufor zwolnić
 kiedy nie jest już potrzebny. Jeżeli nastąpiłoby kopiowanie, nie byłoby wiadomo która zmienna
 miałaby być odpowiedzialna za zwolenienie pamięci bufora.
 
@@ -104,8 +104,8 @@ Ale o tym będzie mowa później.
 ## Klonowanie
 
 Kiedy zachodzi potrzeba skopiowania zawartości zmiennej, na pomoc przychodzi **klonowanie**.
-W przypadku `String` klonowanie polega na zarezerwowaniu pamięci na nowy bufor i skopiowanie
-zawartości jedneo bufora do drugiego. Do klonowania służy metoda `clone` (z cechy `Clone`).
+W przypadku `String` klonowanie polega na zarezerwowaniu pamięci na nowy bufor i skopiowaniu
+zawartości jednego bufora do drugiego. Do klonowania służy metoda `clone` (z cechy `Clone`).
 Poniższy kod zadziała:
 
 ```rust

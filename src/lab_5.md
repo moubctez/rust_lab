@@ -1,6 +1,6 @@
 # Struktury, enumeracje i dopasowywanie wzorców
 
-Struktura łączy różne typy danych w jedną całość. Definiujemy są za pomocą słowa kluczowego `struct`
+Struktura łączy różne typy danych w jedną całość. Definiujemy ją za pomocą słowa kluczowego `struct`
 oraz nazw pól i typów danych dla każdego pola. Na przykład definicja struktury może wyglądać tak:
 
 ```rust

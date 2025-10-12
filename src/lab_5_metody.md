@@ -2,7 +2,7 @@
 
 Funkcje ściśle powiązane ze strukturami danych nazywamy **metodami**. Metody są podobne do funkcji:
 definiujemy je za pomocą słowa kluczowego `fn`. Różnica jest taka, że pierwszym parametrem jest
-`&self` albo `&mut self`, oraz to, źe znajdują się w bloku `impl`.
+`&self` albo `&mut self` oraz to, że znajdują się w bloku `impl`.
 
 ```rust
 struct Rectangle {

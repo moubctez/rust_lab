@@ -54,7 +54,7 @@ Podkreślenia (`_`) są opcjonalne.
 
 ## Liczby zmiennoprzecinkowe
 
-Liczby zmiennoprzecinkowe są reprezentowanie zgodnie ze standardem IEEE-754. Domyślnym typem jest
+Liczby zmiennoprzecinkowe są reprezentowane zgodnie ze standardem IEEE-754. Domyślnym typem jest
 `f64`.
 
 ```rust
@@ -91,7 +91,7 @@ Typ `tuple` grupuje różne typy danych z jeden złożony typ.
 let set: (char, i32, &str) = ('🍎', 100, "Jabłko");
 ```
 
-Można „dobrać” się do poszczególnych elementów krotki:
+Można „dobrać się” do poszczególnych elementów krotki:
 
 ```rust
 let set = ('🍎', 100, "Jabłko");
@@ -113,7 +113,7 @@ println!("Nazwa {name}");
 ## Tablica
 
 Tablica jest zbiorem elementów tego samego typu. Raz zdefiniowana tablica nie może zmieniać liczby
-zawartej w niej elementów. (Do tego służą inne typy np. `Vec`).
+zawartej w niej elementów. Do tego służą inne typy np. `Vec`.
 
 ```rust
 let fib: [u16; 9] = [1, 2, 3, 5, 8, 13, 21, 34, 55];

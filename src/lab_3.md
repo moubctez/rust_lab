@@ -93,7 +93,35 @@ error[E0308]: `if` and `else` have incompatible types
   |                                     expected because of this
 ```
 
-Przykład: liczby dni w roku.
+Pamiętaj również, że wszystkie możliwości muszą zostać obsłużone, czyli nie może być takiego
+przypadku, że warunek nie zwróci wartości. Poniższy kod nie zadziała, ponieważ brakuje końcowego
+`else` zwracającego wartość:
+
+```rust,compile_fail
+let score = 50;
+let bonus = if score < 100 {
+    2
+} else if score > 0 {
+    3
+}
+```
+
+```text
+error[E0317]: `if` may be missing an `else` clause
+  --> src/main.rs:29:12
+   |
+29 |       } else if score > 0 {
+   |  ____________^
+30 | |         3
+   | |         - found here
+31 | |     };
+   | |_____^ expected integer, found `()`
+   |
+   = note: `if` expressions without `else` evaluate to `()`
+   = help: consider adding an `else` block that evaluates to the expected type
+```
+
+### Przykład: liczby dni w roku.
 
 ```rust
 let year = 2025;

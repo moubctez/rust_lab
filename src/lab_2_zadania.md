@@ -1,6 +1,7 @@
 # Zadania do samodzielnego wykonania
 
-1. Napisz funkcję zamieniającą (w obie strony):
+1. Napisz funkcję zamieniającą następujące jednostki (w obie strony, po jednej funkcji na jednostkę
+   i kierunek):
 
    - temperaturę ze skali Celcjusza na Fahrenheita
    - odłegłość z metrów na stopy

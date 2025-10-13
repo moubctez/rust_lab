@@ -7,3 +7,14 @@
 3. Napisz program znajdujący podzielniki podanej liczby.
 
 4. Na podstawie poprzedniego zadania, napisz funkcję znajdującą liczby pierwsze z podanego zakresu (np. od 3 do 100).
+5. Napisz program, który tworzy tekstową choinkę o zadanej wysokości.
+
+Dla h = 4:
+```
+   *
+  ***
+ *****
+*******
+```
+Użyj pętli for i metod repeat() dla łańcuchów.
+Zadanie dodatkowe dla szybkich: Zapisz program dla stałej wysokości 9, w jak najmniejszej liczbie znaków.

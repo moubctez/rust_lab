@@ -127,7 +127,7 @@ Można zdefiniować tablicę zawierającą określoną liczbę takich samych ele
 let all_fives = [5; 3]; // to samo co [5, 5, 5]
 ```
 
-Do poszczególnym elementów tablicy można „dobrać” poprzed wskazanie indeksu w nawiasie kwadratowym.
+Poszczególne elementy tablicy można „wydobyć” poprzez wskazanie indeksu w nawiasie kwadratowym.
 Indeksy zaczynają się od 0.
 
 ```rust

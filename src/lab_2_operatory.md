@@ -32,7 +32,7 @@
 | `&&`   | logiczne I   |
 | `\|\|` | logiczne LUB |
 
-W przykładzie poniżej, z powodu lenistwa, `panic!()` nie będzie wykonywany.
+W przykładzie poniżej, z powodu lenistwa, `panic!()` nigdy nie nastąpi.
 
 ```rust
 let a = true || panic!();

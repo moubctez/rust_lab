@@ -97,8 +97,9 @@ for i in 1..8 {
 }
 ```
 
-Do pobrania liczby z klawiatury można sie posłużyć następującym kodem:
-```rust,noplayground
+Do pobrania liczby z klawiatury można się posłużyć następującym kodem:
+
+```rust,ignore
 use std::io;
 
 fn main() {
@@ -113,7 +114,7 @@ fn main() {
         .trim()
         .parse()
         .expect("Nie liczba!");
-	
-	println!("Podano: {}", number);
+
+	println!("Podano: {number}");
 }
 ```

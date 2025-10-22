@@ -14,3 +14,14 @@
 let zeros = [0u8; 16];
 let slice = &zeros[..20];
 ```
+5. Zaimplementuj trzy funkcje:
+```rust,ignore
+fn eat_string(s: String)
+fn borrow_string(s: &String)
+fn borrow_mut_string(s: &mut String)
+```
+Każda ma wypisać komunikat, ale w inny sposób:
+- `eat_string` — przejmuje własność i wypisuje tekst wielkimi literami.
+- `borrow_string` — pożycza tylko do odczytu, wypisuje tekst bez zmian.
+- `borrow_mut_string` — pożycza mutowalnie, dopisuje na końcu `HURRA!`, po czym wypisuje wynik.
+W `main():` utwórz `String`, wywołaj po kolei wszystkie trzy funkcje tak, by program się kompilował, wypisz końcowy stan `String`. Zastanów się nad kolejnością wywołań.

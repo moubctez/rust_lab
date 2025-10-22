@@ -19,6 +19,7 @@
 - [Struktury, enumeracje i dopasowywanie wzorców](./lab_5.md)
   - [Metody](./lab_5_metody.md)
   - [Enumeracje](./lab_5_enum.md)
+  - [Dopasowywanie wzorców](./lab_5_match.md)
 - [Korzystanie z przydatnych pakietów](./lab_6.md)
 - [Iteratory](./lab_7.md)
 - [Obsługa błędów](./lab_8.md)

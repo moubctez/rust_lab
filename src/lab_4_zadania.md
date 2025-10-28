@@ -36,7 +36,7 @@
    - jest stała lista słów do ocenzurowania (np. jako `const`)
    - zakazane słowa zastępowane są `***` w tekście
    - słowa zawierające zakazane słowa nie są cenzurowane, np. zakazane słowo _luj_ nie spowoduje, że
-     funkcja ocenzuruje słow _malujący_
+     funkcja ocenzuruje słowo _malujący_
    - ocenzurowany tekst zwracany jest jako `String`
 
    Pomoc:

@@ -22,7 +22,7 @@ fn go(direction: Direction) {
 
 Każdy z wariantów enumaracji posiada swój numer, który wskazuje jaki wariant enumeracji przechowuje
 dana zmienna. Taki numer nazywamy **wyróżnikiem**. Domyślnie warianty są numerowane od zera. Można
-przypisać własne wartości. Błędem jest przypisane tej samej wartości do różnych wariantów.
+im przypisać własne wartości. Błędem jest przypisane tej samej wartości do różnych wariantów.
 
 Pominięcie numeru wyróżnika spowoduje, że kompilator przypisze kolejną liczbę.
 

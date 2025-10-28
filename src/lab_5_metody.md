@@ -61,7 +61,7 @@ impl Rectangle {
 }
 ```
 
-Rzadziej używane, aczwoliek czasami użyteczne, jest podanie samego `self` jako pierszego parametru.
+Rzadziej używane, aczkolwiek czasami użyteczne, jest podanie samego `self` jako pierszego parametru.
 Taka metoda „zje” powiązaną strukturę, czyli przejmie na własność, a struktura przestanie istnieć
 na końcu zakresu metody. Niezbyt wyszukany, ale prosty przykład:
 
@@ -95,7 +95,7 @@ powiązanymi**. Nie potrzebują one instancji aby zostać wywołane. Można uży
 konstruktora dla powiązanego typu.
 
 W przykładnie poniżej `Self` jest synonimem struktury, której dotyczy implementacja. W miejsce
-`Self` możnabyłoby użyć konkretnej nazwy – w tym przypadku `Rectangle`.
+`Self` można byłoby użyć konkretnej nazwy – w tym przypadku `Rectangle`.
 
 Powiązane funkcje wywołuje się używając składni `::`.
 

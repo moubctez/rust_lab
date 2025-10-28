@@ -39,7 +39,7 @@ fn print_direction(direction: Direction) {
 }
 ```
 
-`match` musi pokrywać wszystkie możliwości, jakie przyjmuje dana wartość. W przeciwnym razie
+`match` musi pokrywać wszystkie możliwości, jakie przyjmuje dana wartość. W przeciwnym razie
 kompilator zwróci błąd.
 
 ```rust,compile_fail
@@ -56,4 +56,91 @@ error[E0004]: non-exhaustive patterns: `None` not covered
   |
 2 |     match option {
   |           ^^^^^^ pattern `None` not covered
+```
+
+Jak ogarnąć wszystkie przypadki w `match`? Przykłady:
+
+```rust
+let number = 5;
+match number {
+    13 => println!("pech"),
+    21 => println!("oko"),
+    60 => println!("kopa"),
+    69 => println!(";)"),
+    _ => println!("inna liczba")
+}
+```
+
+```rust
+let number = 13;
+match number {
+    13 => println!("pech"),
+    21 => println!("oko"),
+    60 => println!("kopa"),
+    69 => println!(";)"),
+    n @ 10..100 => println!("liczba dwucyfrowa {n}"),
+    n if n > 1000 => println!("duża liczba {n}"),
+    n => println!("liczba {n}")
+}
+```
+
+## if-let
+
+Zamiast
+
+```rust
+# enum Direction {
+#     North,
+#     South,
+#     East,
+#     West,
+#     Azimuth(f64),
+#     Point { longitude: f64, latitide: f64 },
+# }
+let dir = Direction::Azimuth(60.);
+match dir {
+    Direction::Azimuth(azimuth) => println!("Azymut {azimuth}"),
+    _ => println!("Potrzebny azymut"),
+}
+```
+
+lepiej jest użyć
+
+```rust
+# enum Direction {
+#     North,
+#     South,
+#     East,
+#     West,
+#     Azimuth(f64),
+#     Point { longitude: f64, latitide: f64 },
+# }
+let dir = Direction::Azimuth(60.);
+if let Direction::Azimuth(azimuth) = dir {
+    println!("Azymut {azimuth}");
+} else {
+    println!("Potrzebny azymut");
+}
+```
+
+## let-else
+
+```rust
+# enum Direction {
+#     North,
+#     South,
+#     East,
+#     West,
+#     Azimuth(f64),
+#     Point { longitude: f64, latitide: f64 },
+# }
+fn azimuth_only(dir: Direction) -> f64 {
+    let Direction::Azimuth(azimuth) = dir else {
+        return f64::NAN;
+    };
+    azimuth
+}
+
+let dir = Direction::Azimuth(60.);
+let azimuth = azimuth_only(dir);
 ```

@@ -10,6 +10,7 @@
    Następnie:
 
    - Utwórz kilka instancji tej struktury.
+   - Wrzuć utworzone instacje do kolecji (np. tabeli).
    - Wypisz na ekran tytuły wszystkich książek, które są dostępne (`available == true`).
 
 2. Utwórz strukturę krotkową `RGB(u8, u8, u8)` reprezentującą kolor. Napisz funkcję `print_color`,
@@ -53,7 +54,7 @@
    ```rust,ignore
    struct Rectangle {
        width: u32,
-   	   height: u32,
+       height: u32,
    }
    ```
 
@@ -71,13 +72,13 @@
 
    ```rust,ignore
    struct User {
-   	   id: u32,
-   	   name: String,
-   	   active: bool,
+       id: u32,
+       name: String,
+       active: bool,
    }
 
    struct Users {
-   	   list: Vec<User>,
+       list: Vec<User>,
    }
    ```
 

@@ -14,6 +14,38 @@ Są dwie postaci skrzynek:
 Pakiet jest zbiorem jednej lub więcej skrzynek; zawiera plik `Cargo.toml`, który mówi jak budować
 skrzynki.
 
+Podstawowy projekt zawierający skrzynkę binarną i biblioteczną może wyglądać tak:
+
+```text
+projekt/
+└── Cargo.lock
+└── Cargo.toml
+└── src/
+    └── lib.rs
+    └── main.rs
+└── target/
+```
+
+W takim przypadku, _lib.rs_ będzie zawierało publiczny interfejs, z którego korzystać będzie
+program napisany w _main.rs_. Jest to preferowany wzorzec budowania projektu. Oczywiście, struktura
+plików może być bardziej rozbudowana o drzewo modułów i/lub zestaw plików wykonywalnych.
+
+```text
+projekt/
+└── Cargo.lock
+└── Cargo.toml
+└── src/
+    └── bin/
+        └── prog1.rs
+        └── prog2.rs
+    └── lib.rs
+    └── mod1/
+        └── mod.rs
+        └── innermod.rs
+    └── mod2.rs
+└── target/
+```
+
 ## Moduł
 
 Kod źródłowy dzieli się na moduły, żeby pogrupować związane ze sobą części, zwiększyć czytelność
@@ -69,7 +101,7 @@ lub w postaci plików:
 ```text
 src/
 └── main.rs
-└── house
+└── house/
     └── mod.rs
     └── bedroom.rs
     └── toilet.rs

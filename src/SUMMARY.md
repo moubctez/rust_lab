@@ -25,6 +25,8 @@
   - [Widoczność](./lab_6_widoczność.md)
   - [Zadania do samodzielnego wykonania](./lab_6_zadania.md)
 - [Iteratory](./lab_7.md)
+  - [Iteratory](./lab_7_iteratory.md)
+  - [Zadania do samodzielnego wykonania](./lab_7_zadania.md)
 - [Obsługa błędów](./lab_8.md)
 - [Elementy funkcyjne języka](./lab_9.md)
 - [Typy generyczne, zaawansowane dziedziczenie i czas życia obiektów](./lab_10.md)

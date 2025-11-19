@@ -45,8 +45,8 @@ impl Rectangle {
 }
 ```
 
-Jeżeli metoda ma zmieniać strukturę, z którą jest powiązana, to sygnatura funkcji powinna zawierać
-`&mut self` jako pierwszy parametr. Na przykład, prosta funkcja zmieniająca wysokość prostokąta.
+Jeżeli metoda ma zmieniać strukturę z którą jest powiązana, to sygnatura funkcji powinna zawierać
+`&mut self` jako pierwszy parametr. Na przykład: prosta funkcja zmieniająca wysokość prostokąta.
 
 ```rust
 # struct Rectangle {
@@ -94,7 +94,7 @@ Funkcje zdefiniowane w bloku `impl`, ale nie odnoszące się do `self`, nazwyamy
 powiązanymi**. Nie potrzebują one instancji aby zostać wywołane. Można użyć takiej funkcji jako
 konstruktora dla powiązanego typu.
 
-W przykładnie poniżej `Self` jest synonimem struktury, której dotyczy implementacja. W miejsce
+W przykładzie poniżej `Self` jest synonimem struktury, której dotyczy implementacja. W miejsce
 `Self` można byłoby użyć konkretnej nazwy – w tym przypadku `Rectangle`.
 
 Powiązane funkcje wywołuje się używając składni `::`.

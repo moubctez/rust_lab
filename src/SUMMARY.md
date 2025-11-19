@@ -24,7 +24,7 @@
 - [Paczki, skrzynki i moduły](./lab_6.md)
   - [Widoczność](./lab_6_widoczność.md)
   - [Zadania do samodzielnego wykonania](./lab_6_zadania.md)
-- [Iteratory](./lab_7.md)
+- [Zbiory i iteratory](./lab_7.md)
   - [Iteratory](./lab_7_iteratory.md)
   - [Zadania do samodzielnego wykonania](./lab_7_zadania.md)
 - [Obsługa błędów](./lab_8.md)

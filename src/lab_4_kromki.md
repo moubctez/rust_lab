@@ -8,11 +8,11 @@ elementów może być ciąg znaków. Kromka nie posiada własności do danych, d
 Na początek kilka sposobów na wydobycie zakresu ze zbioru elementów. Przykładowy kod:
 
 ```rust
-    let fib = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55];
-    let slice = &fib[2..5];
-    for element in slice {
-        println!("{element}");
-    }
+let fib = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55];
+let slice = &fib[2..5];
+for element in slice {
+    println!("{element}");
+}
 ```
 
 > Podanie zakresu przekraczającego wielkość zbioru zakończy się paniką w trakcie wykonywania

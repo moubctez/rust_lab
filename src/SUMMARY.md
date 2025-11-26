@@ -30,6 +30,7 @@
 - [Obsługa błędów](./lab_8.md)
   - [Zadania do samodzielnego wykonania](./lab_8_zadania.md)
 - [Elementy funkcyjne języka](./lab_9.md)
+  - [Zadania do samodzielnego wykonania](./lab_9_zadania.md)
 - [Typy generyczne, zaawansowane dziedziczenie i czas życia obiektów](./lab_10.md)
 - [Funkcje, wskaźniki do funkcji i domknięcia](./lab_11.md)
 - [Wskaźniki, sprytne wskaźniki](./lab_12.md)

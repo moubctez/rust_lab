@@ -28,6 +28,8 @@
   - [Iteratory](./lab_7_iteratory.md)
   - [Zadania do samodzielnego wykonania](./lab_7_zadania.md)
 - [Obsługa błędów](./lab_8.md)
+  - [Operator ?](./lab_8_operator.md)
+  - [Własne błędy](./lab_8_error.md)
   - [Zadania do samodzielnego wykonania](./lab_8_zadania.md)
 - [Elementy funkcyjne języka](./lab_9.md)
   - [Zadania do samodzielnego wykonania](./lab_9_zadania.md)

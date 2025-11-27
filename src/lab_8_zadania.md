@@ -21,3 +21,6 @@
       InvalidChar(char),
    }
    ```
+
+2. Praca nad własnym projektem - aktualne źródła projektu dołączyć (tylko pliki `*.rs` i
+   `Cargo.toml`) do wysyłanych zadań.

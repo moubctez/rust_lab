@@ -408,7 +408,7 @@ fn greater_than(k: i32) -> impl Fn(i32) -> bool {
 
 * użyty jest `move`, aby przenieść wartość `k` do domknięcia,
 * funkcja zwraca domknięcie implementujące `Fn(i32) -> bool`,
-* zwrócone dopmknięcie jest predykatem, bo zwraca `bool`.
+* zwrócone domknięcie jest predykatem, bo zwraca `bool`.
 
 ```rust
 fn greater_than(k: i32) -> impl Fn(i32) -> bool {

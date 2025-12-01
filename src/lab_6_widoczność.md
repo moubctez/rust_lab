@@ -86,7 +86,7 @@ fn main() {
 }
 ```
 
-Powyższy kod nie skompiluje się ponieważ pola struktury są prywatne dla modułu `shape`.
+Powyższy kod nie skompiluje się, ponieważ pola struktury są prywatne dla modułu `shape`.
 
 ```text
 error[E0451]: fields `width` and `height` of struct `Rectangle` are private

@@ -16,7 +16,7 @@
 
 2. Pobrać źródła [rata_demo](https://detox.wi.zut.edu.pl/pb/rust/src/rata_demo/), uruchomić,
    podzielić na moduły (najlepiej aby każda struktura była w osobnym module), dołożyć obsługę
-   klawisza Enter, ma powodować wejście do katalogu, na którym znajduje się kursor.
+   klawisza Enter, które wciśnięcie ma powodować wejście do katalogu, na którym znajduje się kursor.
 
 3. Pobrać źródła [ggez_demo](https://detox.wi.zut.edu.pl/pb/rust/src/ggez_demo/) lub
    [piston_demo](https://detox.wi.zut.edu.pl/pb/rust/src/piston_demo/), uruchomić, podzielić na

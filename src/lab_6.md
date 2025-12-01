@@ -72,7 +72,7 @@ fn main() {
 pub struct Demo;
 ```
 
-Dla ostatnich dwóch sposobów, _src/main.rs_ powinien wyglądać następująca (zwróć uwagę na
+Dla ostatnich dwóch sposobów, _src/main.rs_ powinien wyglądać następująco (zwróć uwagę na
 konieczność podania deklaracji modułu z użyciem słowa `mod`):
 
 ```rust,ignore

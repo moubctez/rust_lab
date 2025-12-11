@@ -248,7 +248,7 @@ trait ReadWrite: Read + Write {
 impl<T: Read + Write> ReadWrite for T {}
 
 fn main() {
-    let mut cursor = std::io::Cursor::new(vec![1,2,3]);
+    let mut cursor = std::io::Cursor::new([1,2,3]);
 
     cursor.do_rw();
     cursor.write_all(&[9]).unwrap();
@@ -257,7 +257,7 @@ fn main() {
     let mut buf = [0; 4];
     cursor.read(&mut buf).unwrap();
 
-    println!("{:?}", buf);
+    println!("{buf:?}");
 }
 ```
 
@@ -349,7 +349,7 @@ fn main() {
 ## **15. Relacje `'a`, `'b` – funkcja `choose`**
 
 ```rust
-fn choose<'a, 'b, T>(a: &'a T, b: &'b T) -> &T {
+fn choose<'a, T>(a: &'a T, b: &'a T) -> &'a T {
     // Zwrot według logiki (wybór typowy)
     if true { a } else { b }
 }
@@ -381,4 +381,3 @@ fn main() {
     println!("{r2}");
 }
 ```
-

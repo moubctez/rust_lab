@@ -1,6 +1,5 @@
 # Funkcje, wskaźniki do funkcji i domknięcia
 
-
 ### 1. Funkcja – przypomnienie składni
 
 Klasyczna funkcja przyjmująca argument i zwracająca wynik:

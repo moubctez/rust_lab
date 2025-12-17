@@ -36,6 +36,7 @@
 - [Typy generyczne, zaawansowane dziedziczenie i czas życia obiektów](./lab_10.md)
   - [Zadania do samodzielnego wykonania](./lab_10_zadania.md)
 - [Funkcje, wskaźniki do funkcji i domknięcia](./lab_11.md)
+  - [Zadania do samodzielnego wykonania](./lab_11_zadania.md)
 - [Wskaźniki, sprytne wskaźniki](./lab_12.md)
 - [Współbieżność (wątki, synchronizacja)](./lab_13.md)
 - [Integracja z innymi językami](./lab_14.md)

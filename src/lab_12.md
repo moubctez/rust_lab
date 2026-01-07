@@ -581,4 +581,3 @@ fn main() {
     assert!(demo.get().is_some());
 }
 ```
-

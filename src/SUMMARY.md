@@ -40,5 +40,8 @@
 - [Testy](./lab_12.md)
   - [Zadania do samodzielnego wykonania](./lab_12_zadania.md)
 - [Współbieżność (wątki, synchronizacja)](./lab_13.md)
+  - [Zadania do samodzielnego wykonania](./lab_13_zadania.md)
 - [Integracja z innymi językami](./lab_14.md)
+  - [Zadania do samodzielnego wykonania](./lab_14_zadania.md)
 - [Dystrybucja, pakiety i moduły](./lab_15.md)
+  - [Zadania do samodzielnego wykonania](./lab_15_zadania.md)
